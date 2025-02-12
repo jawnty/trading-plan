@@ -1,0 +1,21 @@
+# Google Sheets API Configuration
+google_sheets:
+  scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly']
+  service_account_file: '/path/to/your/credentials.json'
+  spreadsheet_id: 'your-spreadsheet-id'
+  range_name: 'Sheet1!A2:B'
+
+# OpenAI API Configuration
+openai:
+  api_key: 'your-openai-api-key'
+  model: 'gpt-4'
+  temperature: 0.7
+  max_tokens: 600
+
+# Trading Parameters
+trading:
+  default_risk_percentage: 0.01
+  required_fields:
+    - symbol
+    - entry_price
+    - stop_loss 
